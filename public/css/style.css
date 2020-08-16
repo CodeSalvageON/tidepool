@@ -26,6 +26,13 @@ h1, h2, h3, h4, p{
   color: whitesmoke;
 }
 
+.text-input{
+  color: blue;
+  border: hidden;
+  border-radius: 10px;
+  font-family: 'Oxygen', sans-serif;
+}
+
 /* Ids */
 
 #background{
