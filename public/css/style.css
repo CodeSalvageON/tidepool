@@ -1,1 +1,45 @@
 /* Natural Tags */
+
+body{
+  background-color: #99ccff;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.amazonaws.com%2Fspoonflower%2Fpublic%2Fdesign_thumbnails%2F0422%2F1023%2FGridGreenPastel_shop_preview.png&f=1&nofb=1');
+}
+
+h1, h2, h3, h4, p{
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Classes */
+
+.center{
+  display: block;
+  text-align: -webkit-center;
+}
+
+.box{
+  width: 500px;
+  position: inherit;
+  border-radius: 10px;
+}
+
+.white{
+  color: whitesmoke;
+}
+
+/* Ids */
+
+#background{
+  top: 0px;
+  left: 0px;
+  width: 2000px;
+  position: relative;
+}
+
+#title{
+  z-index: -1;
+  position: fixed;
+}
+
+#main-box{
+  background-image: url('https://thumbs.gfycat.com/BowedShadowyCoqui-small.gif');
+}
