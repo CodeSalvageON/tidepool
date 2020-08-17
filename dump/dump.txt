@@ -1,0 +1,24 @@
+var number = 0;
+    var unique_user = user_name;
+
+    function createUniqueUser() {
+      if (playerArray.includes(unique_user)){
+        number = number + 1;
+
+        unique_user = user_name + '_' + number;
+        createUniqueUser();
+      }
+      else{
+        // Create the Unique User
+
+        playerArray.push(unique_user);
+        console.log(playerArray);
+
+        // Add the player's attributes
+
+        var attribute_code = unique_user + '_' + user_creature + '_' + user_game_type;
+
+        playerAttributeArray.push(attribute_code);
+        console.log(playerAttributeArray);
+      }
+    }

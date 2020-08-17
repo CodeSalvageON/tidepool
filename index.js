@@ -27,7 +27,7 @@ var playerAttributeArray = [];
 // Static Pages
 
 app.get('/', function(req, res){
-  var static_path = __dirname+'/public/static/index.html';
+  var static_path = __dirname + '/public/static/index.html';
 
   res.sendFile(static_path);
 });
@@ -86,6 +86,8 @@ app.post('/join_game', function(req, res){
     playerAttributeArray.push(attribute_code);
     console.log(playerAttributeArray);
   }
+
+  res.send();
 });
 
 // Listen on the set port
