@@ -104,7 +104,7 @@ app.post('/join_game', function(req, res){
   });
 
   var page_content = `
-
+  <h1 class="center"></h1>
   `
 
   res.send(read_head + page_content + read_footer);
