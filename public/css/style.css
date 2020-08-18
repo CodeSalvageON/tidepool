@@ -50,3 +50,8 @@ h1, h2, h3, h4, p{
 #main-box{
   background-image: url('https://thumbs.gfycat.com/BowedShadowyCoqui-small.gif');
 }
+
+#footer{
+  bottom: 0px;
+  position: relative;
+}

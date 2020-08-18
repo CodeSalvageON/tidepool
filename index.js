@@ -87,7 +87,27 @@ app.post('/join_game', function(req, res){
     console.log(playerAttributeArray);
   }
 
-  res.send();
+  // Send the player to the game!
+
+  const raw_head = __dirname + '/raw/rawhead.txt';
+  const raw_footer = __dirname + '/raw/rawfooter.txt';
+
+  var read_head = '';
+  var read_footer = '';
+
+  fs.readFile(raw_head, 'utf8', function(err, data){
+    read_head = data;
+  });
+
+  fs.readFile(raw_footer, 'utf8', function(err, data){
+    read_footer = data;
+  });
+
+  var page_content = `
+
+  `
+
+  res.send(read_head + page_content + read_footer);
 });
 
 // Listen on the set port
