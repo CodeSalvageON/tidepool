@@ -33,6 +33,16 @@ h1, h2, h3, h4, p{
   font-family: 'Oxygen', sans-serif;
 }
 
+.zoom {
+  margin: 0 auto;
+  transition: transform .5s;
+}
+
+.zoom:hover {
+  cursor:pointer;
+  transform: scale(1.2);
+}
+
 /* Ids */
 
 #background{
@@ -54,4 +64,10 @@ h1, h2, h3, h4, p{
 #footer{
   bottom: 0px;
   position: relative;
+}
+
+#fight_opponent{
+  top: 200px;
+  position: relative;
+  background-image: url('https://www.visitlagunabeach.com/imager/s3-us-west-1_amazonaws_com/laguna-craft/craft/tide-pools-saltwater_694f32bf0e9ef81016789076834d1a45.jpg');
 }
