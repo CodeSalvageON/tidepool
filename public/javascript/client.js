@@ -51,7 +51,11 @@ $('#fight_opponent').click(function(){
        }
 
        function doSomething() {
-         alert(enemy_set_username);
+         $('#fight_opponent').hide();
+
+         document.getElementById('header').innerHTML = '<div class="navbar"><h2>Fighting ' + enemy_set_username + '</h2></div>';
+
+         document.getElementById('content').innerHTML = '';
        }
      }
    };

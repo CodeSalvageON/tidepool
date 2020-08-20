@@ -133,6 +133,14 @@ app.post('/join_game', function(req, res){
           <h1>New Tide</h1>
         </div>
       </center>
+
+      <div id="header">
+      </div>
+
+      <center>
+        <div id="content">
+        </div>
+      </center>
       
       <!-- Socket.io -->
 

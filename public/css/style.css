@@ -43,6 +43,11 @@ h1, h2, h3, h4, p{
   transform: scale(1.2);
 }
 
+.navbar{
+  border-radius: 10px;
+  background-color: #99ccff;
+}
+
 /* Ids */
 
 #background{
@@ -70,4 +75,10 @@ h1, h2, h3, h4, p{
   top: 200px;
   position: relative;
   background-image: url('https://www.visitlagunabeach.com/imager/s3-us-west-1_amazonaws_com/laguna-craft/craft/tide-pools-saltwater_694f32bf0e9ef81016789076834d1a45.jpg');
+}
+
+#header{
+  top: 0px;
+  color: red;
+  position: fixed;
 }
