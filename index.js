@@ -21,8 +21,8 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Create an Array
-var playerArray = [];
-var playerAttributeArray = [];
+var playerArray = ['AI'];
+var playerAttributeArray = ['AI_sea_urchin'];
 
 var gameCodeArray = [];
 
@@ -138,7 +138,7 @@ app.post('/join_game', function(req, res){
       </div>
 
       <center>
-        <div id="content">
+        <div id="content" class="hover">
         </div>
       </center>
       

@@ -62,3 +62,11 @@ $('#fight_opponent').click(function(){
 
    http.send("player=" + localStorage.getItem("username"));
 });
+
+$('#signup').click(function(){
+  $('#signup-modal').show();
+});
+
+$('#close-signup-modal').click(function(){
+  $('#signup-modal').hide();
+});

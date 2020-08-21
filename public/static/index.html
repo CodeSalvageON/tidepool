@@ -25,6 +25,9 @@
       <h1>TidePool.io</h1>
     </div>
     <center>
+      <div class="navbar" id="info-bar">
+        <h2><button class="zoom" id="signup">Sign Up</button> to save your temporary account name and settings. Or <button class="zoom" id="login">Login</button>.</h2>
+      </div>
       <div class="center hover box" id="main-box">
         <h2 class="white">Join Game</h2>
         <form method="POST" action="https://tidepool.codesalvageon.repl.co/join_game" id="game_joiner">
@@ -36,11 +39,32 @@
             <option value="hermit_crab">Hermit Crab</option>
             <option value="jelly_fish">Jelly Fish</option>
           </select></h3>
-          <button class="text-input">Join Game</button>
+          <button class="text-input zoom">Join Game</button>
         </form>
       </div>
     </center>
 
+    <div class="modal" id="signup-modal">
+      <div class="modal-content"> 
+        <span class="close" id="close-signup-modal">&times;</span>
+        <h2 class="center">Sign Up</h2>
+        <div class="center">
+          <form method="POST" action="https://tidepool.codesalvageon.repl.co/signup">
+            <h3>Account Name: <input name="new_account_name" type="text" class="text-input"/></h3>
+            <h3>Creature: <select name="creature" class="text-input">
+              <option value="sea_urchin">Sea Urchin</option>
+              <option value="chiton">Chiton</option>
+              <option value="turban_snail">Turban Snail</option>
+              <option value="hermit_crab">Hermit Crab</option>
+              <option value="jelly_fish">Jelly Fish</option>
+            </select></h3>
+            <button class="text-input zoom">Create Account</button>
+          </form> 
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://tidepool.codesalvageon.repl.co/javascript/client.js"></script>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="https://tidepool.codesalvageon.repl.co/javascript/socket.js"></script>
